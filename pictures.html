@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
+</head>
+<body>
+   <header class="grid grid-cols-12 grid-rows-2 gap-0 bg-white p-2 rounded-lg shadow-lg">
+    <div class ="col-start-1 col-end-4 row-start-1 row-end-3 rounded-lg ">
+        <img width="100%" height="100%" src="/photo/vecteezy_delicious-sushi-with-cross-chopstick_.jpg" alt="sushi"/>
+    </div>
+    <div class="flex col-start-4 col-end-11 row-start-1 row-end-3 rounded-lg justify-center items-center">
+        <h1 class="font-serif size text-2xl">Sushinee</h1>
+    </div>
+    <div class="flex col-start-11 col-end-13 row-start-1 row-end-3  items-center">
+        <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+    </div>
+   </header>
+   <div class="flex  justify-center items-center align-center container  mx-auto hidden fixed inset-0 bg-red-500 opacity-100 z-50 hidden " id="smallScreenMenu" onclick="toggleMenu()">   
+    <ul class="">
+            <li><a href="index.html"><h2 class="font-serif text-2xl text-white">Sushinee</h2></a></li>
+            <li><a href="menu.html"><h2 class="font-serif text-2xl text-white">Menu</h2></a></li>
+            <li><a href="pictures.html"><h2 class="font-serif text-4xl text-white">Pictures</h2></a></li>
+            <li><a href="restaurant.html"><h2 class="font-serif text-2xl text-white">Restaurant</h2></a></li>
+            <li><a href="contact.html"><h2 class="font-serif text-2xl text-white">Contact</h2></a></li>
+    </ul>
+    </div> 
+    <div></div>
+<script>
+    function toggleMenu()
+    {
+        const menu = document.getElementById('smallScreenMenu')
+        menu.classList.toggle("hidden");
+    }
+</script>
+</body>
+</html>
