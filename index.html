@@ -8,33 +8,39 @@
     <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-   <header class="grid grid-cols-12 grid-rows-2 gap-0 bg-white p-2 rounded-lg shadow-lg">
-    <div class =" md:hidden col-start-1 col-end-4 row-start-1 row-end-3 rounded-lg ">
-        <img width="100%" height="100%" src="/photo/vecteezy_delicious-sushi-with-cross-chopstick_.jpg" alt="sushi"/>
+   <header class="grid grid-cols-12 grid-rows-1 gap-0 bg-white p-2 rounded-lg shadow-lg">
+    <div class =" col-start-1 col-end-5 row-start-1 row-end-2 rounded-lg ">
+       <a href="index.html"> <img width="100%" height="100%" src="/photo/vecteezy_delicious-sushi-with-cross-chopstick_.jpg" alt="sushi"/></a>
     </div>
-    <div class=" md:hidden flex col-start-4 col-end-11 row-start-1 row-end-3 rounded-lg justify-center items-center">
+    <div class=" sm:hidden lg:hidden md:hidden flex col-start-4 col-end-11 row-start-1 row-end-3 rounded-lg justify-center items-center">
         <h1 class="font-serif size text-2xl">Sushinee</h1>
     </div>
-    <div class="md:hidden flex col-start-11 col-end-13 row-start-1 row-end-3  items-center">
+    <div class="sm:hidden md:hidden lg:hidden flex col-start-11 col-end-13 row-start-1 row-end-3  items-center">
         <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
     </div>
-        <div class="hidden md:col-start-1 col-end-4 row-start-1 row-end-3 rounded-lg">
-            <img width="100%" height="100%" src="/photo/vecteezy_delicious-sushi-with-cross-chopstick_.jpg" alt="sushi"/>
+        <div class="hidden sm:flex col-start-5 col-end-7 row-star-1 row-end-2 text-center align-center items-center justify-center">
+           <a href="menu.html"> Menu</a>
         </div>
-        <div class="hidden md:col-start-5 col-end-7 row col-start-1 row-end-3 border-2 border-black ">
-            Menu
+        <div class="hidden sm:flex col-start-7 col-end-9 row-star-1 row-end-2 text-center align-center items-center justify-center">
+            <a href="pictures.html">Pictures</a>
+        </div>
+        <div class="hidden sm:flex col-start-9 col-end-11 row-star-1 row-end-2 text-center align-center items-center justify-center">
+            <a href="restaurant.html">Restaurant</a>
+        </div>
+        <div class="hidden sm:flex col-start-11 col-end-13 row-star-1 row-end-2 text-center align-center items-center justify-center">
+            <a href="contact.html">contact</a>
         </div>
    </header>
    <div class="flex  justify-center items-center align-center container  mx-auto hidden fixed inset-0 bg-red-500 opacity-100 z-50 hidden " id="smallScreenMenu" onclick="toggleMenu()">   
     <ul class="">
             <li><a href="index.html"><h2 class="font-serif text-4xl text-white">Sushinee</h2></a></li>
-            <li>http://127.0.0.1:5500/contact.html<a href="menu.html"><h2 class="font-serif text-2xl text-white">Menu</h2></a></li>
+            <li><a href="menu.html"><h2 class="font-serif text-2xl text-white">Menu</h2></a></li>
             <li><a href="pictures.html"><h2 class="font-serif text-2xl text-white">Pictures</h2></a></li>
             <li><a href="restaurant.html"><h2 class="font-serif text-2xl text-white">Restaurant</h2></a></li>
             <li><a href="contact.html"><h2 class="font-serif text-2xl text-white">Contact</h2></a></li>
     </ul>
     </div> 
-    <section class="bg-center bg-cover bg-no-repeat bg-[url('./photo/close-up-delicious-asian-food.jpg')] bg-gray-700 bg-blend-multiply rounded-lg">
+    <section class="bg-center bg-cover bg-no-repeat bg-[url('./photo/close-up-delicious-asian-food.jpg')] bg-gray-700 bg-blend-multiply ">
         <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">Suchinee</h1>
             <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">Notre restaurant de sushi propose une délicieuse sélection de sushis frais et créatifs, offrant une expérience culinaire japonaise authentique et raffinée dans un cadre chaleureux et accueillant..</p>
@@ -57,7 +63,29 @@
         <div class="container mx-auto text-center shadow-lg border-2 border-black rounded-lg font-serif ">
             Bonne nouvelle ! Nous vous offrons la livraison gratuite à partir de 30 euros d'achat. Commandez chez nous pour savourer vos sushis préférés confortablement chez vous, sans frais de livraison.
         </div>
-    </section>              
+    </section>   
+    <footer class="grid grid-cols-12 grid-rows-1 gap-0 bg-white p-2 rounded-lg shadow-lg">
+        <div class="col-start-1 col-end-9 row-star-1 row-end-2 font-serif ">
+            <h1>Suchinee</h1>
+            <p>Hunderenveld 145 1082 Berchem</p>
+            <p>Suchinee@gmail.com</p>
+            <p>+32484471618</p>
+        </div>
+        <div class ="col-start-9 col-end-13 row-start-1 row-end-3 rounded-lg  ">
+            <a href="index.html"> <img width="100%" height="100%" src="/photo/vecteezy_delicious-sushi-with-cross-chopstick_.jpg" alt="sushi"/></a>
+         </div>
+    </footer> 
+    <footer class="grid grid-cols-12 grid-rows-1 gap-0 bg-white p-2 rounded-lg shadow-lg">
+        <div class="col-start-1 col-end-9 row-star-1 row-end-2 font-serif ">
+            <h1>Suchinee</h1>
+            <p>Hunderenveld 145 1082 Berchem</p>
+            <p>Suchinee@gmail.com</p>
+            <p>+32484471618</p>
+        </div>
+        <div class ="col-start-9 col-end-13 row-start-1 row-end-3 rounded-lg  ">
+            <a href="index.html"> <img width="100%" height="100%" src="/photo/vecteezy_delicious-sushi-with-cross-chopstick_.jpg" alt="sushi"/></a>
+         </div>
+    </footer>                     
 <script>
     function toggleMenu()
     {
