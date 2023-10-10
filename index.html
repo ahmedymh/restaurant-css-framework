@@ -61,7 +61,7 @@
     </section>   
     <section class="">
         <div class="container mx-auto text-center shadow-lg border-2 border-black rounded-lg font-serif ">
-            Bonne nouvelle ! Nous vous offrons la livraison gratuite à partir de 30 euros d'achat. Commandez chez nous pour savourer vos sushis préférés confortablement chez vous, sans frais de livraison.
+            Restaurant où la consomation de nos suchi traditionnel se fait directement sur place afin de satisfaire vos papilles gustative.
         </div>
     </section>   
     <footer class="grid grid-cols-12 grid-rows-1 gap-0 bg-white p-2 rounded-lg shadow-lg">
@@ -75,13 +75,21 @@
             <a href="index.html"> <img width="100%" height="100%" src="/photo/vecteezy_delicious-sushi-with-cross-chopstick_.jpg" alt="sushi"/></a>
          </div>
     </footer> 
-                     
+        
+<div id="cookie-banner" class="fixed bottom-0 w-full bg-red-600 p-4 text-center text-white shadow-lg opacity-90 z-50">
+        Ce site utilise des cookies pour améliorer votre expérience.
+        <button class="ml-4 px-4 py-2 bg-green-500 text-white rounded" onclick="Cookies()">Accepter</button>
+        <button class="ml-4 px-4 py-2 bg-red-500 text-white rounded" onclick="Cookies()">Refuser</button>
+    </div>           
 <script>
     function toggleMenu()
     {
         const menu = document.getElementById('smallScreenMenu')
         menu.classList.toggle("hidden");
     }
+    function Cookies() {
+            document.getElementById('cookie-banner').style.display = 'none';
+        }
 </script>
 </body>
 </html>
