@@ -7,41 +7,133 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
 </head>
-<body>
-    <header class="grid grid-cols-12 grid-rows-1 gap-0 bg-white p-2 rounded-lg shadow-lg">
-        <div class =" col-start-1 col-end-5 row-start-1 row-end-2 rounded-lg ">
-           <a href="index.html"> <img width="100%" height="100%" src="photo/SuchineeLogo.jpg" alt="sushi"/></a>
+<body class="overflow-y-hidden">
+    <header class="w-screen h-[180px] flex items-center">    
+        <div class="h-full w-[20%] flex justify-center items-center">
+            <a href="index.html"> <img class="h-full w-[60%]" src="photo/SuchineeLogo.jpg" alt="sushi"/></a>
         </div>
-        <div class=" sm:hidden lg:hidden md:hidden flex col-start-4 col-end-11 row-start-1 row-end-3 rounded-lg justify-center items-center">
-            <h1 class="font-serif size text-2xl">Sushinee</h1>
-        </div>
-        <div class="sm:hidden md:hidden lg:hidden flex col-start-11 col-end-13 row-start-1 row-end-3  items-center">
-            <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-        </div>
-            <div class="hidden sm:flex col-start-5 col-end-7 row-star-1 row-end-2 text-center align-center items-center justify-center">
-               <a href="menu.html"> Menu</a>
+        <div class="h-full w-[80%] flex justify-center items-center text-xl font-serif">
+            <div class="h-full w-[25%] flex justify-center items-center">
+               <a href="menu.html">Menu</a>
             </div>
-            <div class="hidden sm:flex col-start-7 col-end-9 row-star-1 row-end-2 text-center align-center items-center justify-center">
+            <div class="h-full w-[25%] flex  justify-center items-center">
                 <a href="pictures.html">Pictures</a>
             </div>
-            <div class="hidden sm:flex col-start-9 col-end-11 row-star-1 row-end-2 text-center align-center items-center justify-center">
+            <div class="h-full w-[25%] flex justify-center items-center">
                 <a href="restaurant.html">Restaurant</a>
             </div>
-            <div class="hidden sm:flex col-start-11 col-end-13 row-star-1 row-end-2 text-center align-center items-center justify-center">
-                <a href="contact.html">contact</a>
+            <div class="h-full w-[25%] flex justify-center items-center">
+                <a href="contact.html">Contact</a>
             </div>
-       </header>
+        </div>
+   </header>
+
+
        <div class="flex  justify-center items-center align-center container  mx-auto hidden fixed inset-0 bg-red-500 opacity-100 z-50 hidden " id="smallScreenMenu" onclick="toggleMenu()">   
-        <ul class="">
-                <li><a href="index.html"><h2 class="font-serif text-4xl text-white">Sushinee</h2></a></li>
-                <li><a href="menu.html"><h2 class="font-serif text-2xl text-white">Menu</h2></a></li>
-                <li><a href="pictures.html"><h2 class="font-serif text-2xl text-white">Pictures</h2></a></li>
-                <li><a href="restaurant.html"><h2 class="font-serif text-2xl text-white">Restaurant</h2></a></li>
-                <li><a href="contact.html"><h2 class="font-serif text-2xl text-white">Contact</h2></a></li>
-        </ul>
+            <ul class="">
+                    <li><a href="index.html"><h2 class="font-serif text-4xl text-white">Sushinee</h2></a></li>
+                    <li><a href="menu.html"><h2 class="font-serif text-2xl text-white">Menu</h2></a></li>
+                    <li><a href="pictures.html"><h2 class="font-serif text-2xl text-white">Pictures</h2></a></li>
+                    <li><a href="restaurant.html"><h2 class="font-serif text-2xl text-white">Restaurant</h2></a></li>
+                    <li><a href="contact.html"><h2 class="font-serif text-2xl text-white">Contact</h2></a></li>
+            </ul>
         </div> 
-        <main class="grid grid-cols-12 grid-rows-8 gap-1 bg-center bg-cover bg-no-repeat bg-[url('./photo/close-up-delicious-asian-food.jpg')]  bg-blend-multiply bg-gray-500 text-red-500 text-shadow">
-            <div class="flex col-start-1 col-end-13 md:col-start-1 md:col-end-7 md:row-star-6 md:row-end-9 align-center justify-center ">
+
+
+
+        <main class="bg-center bg-cover bg-no-repeat bg-[url('./photo/close-up-delicious-asian-food.jpg')]  bg-blend-multiply bg-gray-500 text-shadow w-screen h-[800px] p-[80px] text-white flex flex-col gap-[50px] font-serif">
+
+
+
+
+            <div class="h-1/2 w-full flex items-center gap-2">
+                <div class="w-1/2 h-full flex flex-col items-center gap-5 pt-[30px]">
+                    <div class="text-4xl font-semibold">
+                        Plateau
+                    </div>
+                    <div class="text-center text-lg">
+                        <p>California Dream</p>
+                        <p>Salmon Forever</p>
+                        <p>California love</p>
+                    </div>
+                </div>
+
+                <div class="w-1/2 h-full flex flex-col items-center gap-5">
+                    <div class="text-4xl font-semibold mt-[20px]">
+                        Sushi
+                    </div>
+                    <div class="text-center text-lg">
+                        <p>Maki-sushi</p>
+                        <p>Sashimi</p>
+                        <p>Nigiri-sushi</p>
+                        <p>Uramaki</p>
+                        <p>Temaki-sushi</p>
+                        <p>Gunkan-maki</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="h-1/2 w-full flex items-center gap-2">
+                <div class="w-1/2 h-full flex flex-col items-center gap-5">
+                    <div class="text-4xl font-semibold">
+                        California rolls
+                    </div>
+                    <div class="text-center text-lg">
+                        <p>Saumon Cheese</p>
+                        <p>Saumon avocat</p>
+                        <p>Saumon mangue</p>
+                        <p>Sweet Chicken</p>
+                        <p>Spicy tempura Scampis</p>
+                        <p>Tempura scampis mangue</p>
+                        <p>Concombre avocat</p>
+                        <p>Surimi avocat</p>
+                        <p>Pink panther</p>
+                        <p>Dynamite</p>
+                        <p>Spicy love</p>
+                    </div>
+                </div>
+
+                <div class="w-1/2 h-full flex flex-col items-center gap-5">
+                    <div class="text-4xl font-semibold mt-[20px]">
+                        Rafraichissement
+                    </div>
+                    <div class="text-center text-lg">
+                        <p>Arizona pomegranate </p>
+                        <p>Arizona mucho mango </p>
+                        <p>Arizona watermelon </p>
+                        <p>Pepsi </p>
+                        <p>Eau spa </p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="h-1/2 w-full flex flex-col items-center justify-center gap-2">
+                
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            
+            <!-- <div class="flex col-start-1 col-end-13 md:col-start-1 md:col-end-7 md:row-star-6 md:row-end-9 align-center justify-center ">
                 
                 <ul class="font-serif"> <h2 class="text-2xl">Plateau</h2>
                     <li>California Dream</li>
@@ -85,25 +177,32 @@
                     <li>Pepsi </li>
                     <li>Eau spa </li>
                 </ul>
-            </div>
+            </div> -->
+
+
+
+
         </main>
-        <footer class="grid grid-cols-12 grid-rows-1 gap-0 bg-white p-2 rounded-lg shadow-lg">
-            <div class="col-start-1 col-end-9 row-star-1 row-end-2 font-serif ">
+        <footer class="w-screen h-[200px] flex mt-[70px]">
+            <div class="h-full w-[40%] flex justify-center items-center flex-col gap-2 text-xl font-semibold">
                 <h1>Suchinee</h1>
                 <p>Hunderenveld 145 1082 Berchem</p>
                 <p>Suchinee@gmail.com</p>
                 <p>+32484471618</p>
             </div>
-            <div class ="col-start-9 col-end-13 row-start-1 row-end-3 rounded-lg  ">
-                <a href="index.html"> <img width="100%" height="100%" src="photo/SuchineeLogo.jpg" alt="sushi"/></a>
-             </div>
-        </footer>           
-<script>
-    function toggleMenu()
-    {
-        const menu = document.getElementById('smallScreenMenu')
-        menu.classList.toggle("hidden");
-    }
-</script>
+            <div class="h-full w-[40%]">
+    
+            </div>
+            <div class="h-[80%] w-[20%] flex justify-center items-center">
+                <a href="index.html"> <img class="h-full w-full" src="photo/SuchineeLogo.jpg" alt="sushi"/></a>
+            </div>
+        </footer>       
+    <script>
+        function toggleMenu()
+        {
+            const menu = document.getElementById('smallScreenMenu')
+            menu.classList.toggle("hidden");
+        }
+    </script>
 </body>
 </html>

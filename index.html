@@ -8,29 +8,27 @@
     <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
 </head>
 <body>
-   <header class="grid grid-cols-12 grid-rows-1 gap-0 bg-white p-2 rounded-lg shadow-lg">
-    <div class =" col-start-1 col-end-5 row-start-1 row-end-1 rounded-lg ">
-       <a href="index.html"> <img width="100%" height="100%" src="photo/SuchineeLogo.jpg" alt="sushi"/></a>
-    </div>
-    <div class=" sm:hidden lg:hidden md:hidden flex col-start-4 col-end-11 row-start-1 row-end-1 rounded-lg justify-center items-center">
-        <h1 class="font-serif size text-2xl">Sushinee</h1>
-    </div>
-    <div class="sm:hidden md:hidden lg:hidden flex col-start-11 col-end-13 row-start-1 row-end-1  items-center">
-        <svg onclick="toggleMenu()" xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-    </div>
-        <div class="hidden sm:flex col-start-5 col-end-7 row-star-1 row-end-2 text-center align-center items-center justify-center">
-           <a href="menu.html"> Menu</a>
+   <header class="w-screen h-[180px] flex items-center">    
+        <div class="h-full w-[20%] flex justify-center items-center">
+            <a href="index.html"> <img class="h-full w-[60%]" src="photo/SuchineeLogo.jpg" alt="sushi"/></a>
         </div>
-        <div class="hidden sm:flex col-start-7 col-end-9 row-star-1 row-end-2 text-center align-center items-center justify-center">
-            <a href="pictures.html">Pictures</a>
-        </div>
-        <div class="hidden sm:flex col-start-9 col-end-11 row-star-1 row-end-2 text-center align-center items-center justify-center">
-            <a href="restaurant.html">Restaurant</a>
-        </div>
-        <div class="hidden sm:flex col-start-11 col-end-13 row-star-1 row-end-2 text-center align-center items-center justify-center">
-            <a href="contact.html">contact</a>
+        <div class="h-full w-[80%] flex justify-center items-center text-xl font-serif">
+            <div class="h-full w-[25%] flex justify-center items-center">
+               <a href="menu.html">Menu</a>
+            </div>
+            <div class="h-full w-[25%] flex  justify-center items-center">
+                <a href="pictures.html">Pictures</a>
+            </div>
+            <div class="h-full w-[25%] flex justify-center items-center">
+                <a href="restaurant.html">Restaurant</a>
+            </div>
+            <div class="h-full w-[25%] flex justify-center items-center">
+                <a href="contact.html">Contact</a>
+            </div>
         </div>
    </header>
+
+
    <div class="flex  justify-center items-center align-center container  mx-auto hidden fixed inset-0 bg-red-500 opacity-100 z-50 hidden " id="smallScreenMenu" onclick="toggleMenu()">   
     <ul class="">
             <li><a href="index.html"><h2 class="font-serif text-4xl text-white">Sushinee</h2></a></li>
@@ -54,42 +52,48 @@
                 <a href="contact.html" class="inline-flex justify-center hover:text-gray-900 items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg border border-white hover:bg-gray-100 focus:ring-4 focus:ring-gray-400">
                     Contactez-nous </a>
                 </section>
-    <section class="">
-        <div class="container mx-auto text-center mb-4 shadow-lg border-2 border-black rounded-lg font-serif  ">
+    <section class="pt-[20px]">
+        <div class="container mx-auto text-center mb-4 shadow-lg border-2 border-black rounded-lg font-serif  pt-[20px]">
             Découvrez l'art du sushi à son meilleur chez nous ! Notre promo spéciale vous invite à plonger dans un festin de saveurs exquises, avec des sushis frais, des rouleaux créatifs et une explosion de délices japonais. Ne ratez pas cette opportunité de vous régaler à petit prix. Réservez votre table dès maintenant et laissez-vous emporter par la magie des sushis. 
         </div>
     </section>   
-    <section class="">
+    <section class="pb-[20px]">
         <div class="container mx-auto text-center shadow-lg border-2 border-black rounded-lg font-serif ">
             Restaurant où la consomation de nos suchi traditionnel se fait directement sur place afin de satisfaire vos papilles gustative.
         </div>
-    </section>   
-    <footer class="grid grid-cols-12 grid-rows-1 gap-0 bg-white p-2 rounded-lg shadow-lg">
-        <div class="col-start-1 col-end-9 row-star-1 row-end-2 font-serif ">
+    </section>
+
+    <footer class="w-screen h-[200px] flex mt-[70px]">
+        <div class="h-full w-[40%] flex justify-center items-center flex-col gap-2 text-xl font-semibold">
             <h1>Suchinee</h1>
             <p>Hunderenveld 145 1082 Berchem</p>
             <p>Suchinee@gmail.com</p>
             <p>+32484471618</p>
         </div>
-        <div class ="col-start-9 col-end-13 row-start-1 row-end-3 rounded-lg  ">
-            <a href="index.html"> <img width="100%" height="100%" src="photo/SuchineeLogo.jpg" alt="sushi"/></a>
-         </div>
-    </footer>   
+        <div class="h-full w-[40%]">
+
+        </div>
+        <div class="h-[80%] w-[20%] flex justify-center items-center">
+            <a href="index.html"> <img class="h-full w-full" src="photo/SuchineeLogo.jpg" alt="sushi"/></a>
+        </div>
+    </footer>
         
-<div id="cookie-banner" class="fixed bottom-0 w-full bg-red-600 p-4 text-center text-white shadow-lg opacity-90 z-50">
+    <div id="cookie-banner" class="fixed bottom-0 w-full bg-red-600 p-4 text-center text-white shadow-lg opacity-90 z-50">
         Ce site utilise des cookies pour améliorer votre expérience.
         <button class="ml-4 px-4 py-2 bg-green-500 text-white rounded" onclick="Cookies()">Accepter</button>
         <button class="ml-4 px-4 py-2 bg-red-500 text-white rounded" onclick="Cookies()">Refuser</button>
-    </div>           
-<script>
-    function toggleMenu()
-    {
-        const menu = document.getElementById('smallScreenMenu')
-        menu.classList.toggle("hidden");
-    }
-    function Cookies() {
-            document.getElementById('cookie-banner').style.display = 'none';
+    </div>      
+    
+    
+    <script>
+        function toggleMenu()
+        {
+            const menu = document.getElementById('smallScreenMenu')
+            menu.classList.toggle("hidden");
         }
-</script>
+        function Cookies() {
+                document.getElementById('cookie-banner').style.display = 'none';
+            }
+    </script>
 </body>
 </html>
